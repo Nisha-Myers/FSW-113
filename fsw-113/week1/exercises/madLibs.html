@@ -1,55 +1,100 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
+
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mad Libs Generator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Architects+Daughter&family=Babylonica&family=Berkshire+Swash&family=Caveat:wght@400;500;600;700&family=Cinzel:wght@400;500;600;700;800;900&family=Cookie&family=Courgette&family=Dancing+Script:wght@400;500;600;700&family=Gloria+Hallelujah&family=Great+Vibes&family=Handlee&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Indie+Flower&family=Ingrid+Darling&family=Kalam:wght@300;400;700&family=Kaushan+Script&family=Lavishly+Yours&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Meie+Script&family=MonteCarlo&family=Ms+Madi&family=My+Soul&family=Neucha&family=Pacifico&family=Parisienne&family=Patrick+Hand&family=Permanent+Marker&family=Sacramento&family=Satisfy&family=Send+Flowers&family=Shadows+Into+Light&family=Square+Peg&family=Tangerine:wght@400;700&family=Tapestry&family=Updock&family=Water+Brush&family=Whisper&family=Yellowtail&display=swap" rel="stylesheet">    
+ 
         <style>
             body {
-                font-family: Verdana, Geneva, Tahoma;
+                font-family: 'Gloria Hallelujah', cursive;
             }
-            .madLibWrapper {
-                border: black 2px solid;
+
+            input {
                 border-radius: 8px;
+            }
+
+            #title {
+                font-size: 68px;
+            }
+
+            .madLibWrapper {
+                font-size: 17px;
+                box-shadow: 10px 33px 83px 60px rgba(0, 0, 0, 0.7);
+                border: black 2px solid;
+                border-radius: 28px;
                 padding: 5px;
                 width: 300px;
                 display: grid;
                 grid-template-columns: 100px 200px;
                 margin: 0 auto;
             }
+
             .madLibSpanner {
+
                 text-align: center;
                 padding: 5px;
                 font-weight: 700;
+                font-size: 30px;
                 grid-column: span 2;
             }
 
             .madLibText {
-                border-radius: 4px;
-                background-color: silver;
+                font-size: 28px;
+                font-weight: bolder;
+                border-radius: 50%;
+                background-color: rgba(167, 223, 204, 0.445);
                 width: 300px;
                 margin: 0 auto;
                 text-align: center;
             }
+
+            #submit {
+                box-shadow: 10px 33px 73px 20px rgba(0, 0, 0, 0.7);
+                font-family: 'Gloria Hallelujah', cursive;
+                font-weight: bolder;
+                font-size: 18px;
+                background-color: rgba(170, 241, 218, 0.822);
+                border-radius: 50%;
+            }
+            #submit:hover {
+                font-size: 26px;
+                text-shadow: 20px 10px 2px rgba(0, 0, 0, 0.479);
+                box-shadow: 10px 33px 73px 20px rgba(0, 0, 0, 0);
+                background-color: white;
+            }
         </style>
+
     </head>
+    
+    
     <body>
         <h1 style='text-align:center;' id='title'>Mad Libs Generator</h1>
         <div class='madLibWrapper'>
-            <div class='madLibSpanner'>Provide a name,<br />two adjectives, and a noun</div>
-            <div>Name:</div>
+            <div class='madLibSpanner'>Provide a name, two adjectives, & a noun.....</div>
+            <div><b>Name:</b></div>
             <div><input style='width:90%' id='name' /></div>
-            <div>Adjective 1:</div>
+            <div><b>Adjective 1:</b></div>
             <div><input style='width:90%' id='adj1' /></div>
-            <div>Adjective 2:</div>
+            <div><b>Adjective 2:</b></div>
             <div><input style='width:90%' id='adj2' /></div>
-            <div>Noun:</div>
+            <div><b>Noun:</b></div>
             <div><input style='width:90%' id='noun' /></div>
             <div class='madLibSpanner' style="text-align: right; padding: 10px;">
-                <button id='submit' onc Submit</button>
+                <button id='submit'>get MAD</button>
             </div>
         </div>
         <br /><br />
         <div id='madLibText' class='madLibText'></div>
     </body>
+
+
     <script>
         document.getElementById('submit').addEventListener( 'click', function() { doMadLib() } )
         document.getElementById('name').addEventListener( 'keyup', function() { doMadLib() } )
@@ -62,5 +107,6 @@
             document.querySelector('#madLibText').innerText = madLibText
         }
     </script>
+
 </html>
 
