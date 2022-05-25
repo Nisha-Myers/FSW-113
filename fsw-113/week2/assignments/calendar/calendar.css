@@ -6,21 +6,26 @@
 
 .calendarTitle {
   text-align: center;
-  padding: 5px;
+  padding: 10px;
   font-weight: 700;
   grid-column: span 7;
   border: silver 1px solid;
+  font-family: 'Great Vibes', cursive;
+  font-size: 80px;
 }
 
 .calendar {
   display: grid;
   grid-template-columns: 75px 75px 75px 75px 75px 75px 75px;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  font-weight: 900;
 }
 
 .calendarCell {
-  border: silver 1px solid;
+  border: silver 4px solid;
   text-align: center;
-  padding: 3px;
+  padding: 10px;
 }
 
 .blankDay {
@@ -28,4 +33,31 @@
   text-align: center;
   padding: 3px;
   background-color: silver;
+}
+
+#button {
+  border: 2px solid bisque;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+}
+
+#month {
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 1%;
+}
+
+#year {
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+    font-weight: bolder;
+  padding: .8%;
+}
+
+#dateInput{
+  text-align: center;
+  margin: 10px;
 }
