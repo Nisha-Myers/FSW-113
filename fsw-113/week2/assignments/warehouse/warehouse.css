@@ -29,6 +29,7 @@
 }
 
 .orderDetails {
+  background-color: rgba(195, 237, 248, 0.671);
   grid-row: span 4;
   border: 1px solid black;
   border-radius: 8px;
@@ -37,20 +38,24 @@
 }
 
 .detailHeader {
+  color: aliceblue;
+  background-color: rgba(125, 165, 175, 0.952);
   text-align: center;
-  background-color: silver;
   border-radius: 8px;
   border-radius: 8px 8px 0px 0px;
+  font-weight: bolder;
 }
 
 .sidebar {
   border: 1px solid black;
   border-radius: 8px;
   text-align: center;
-  background-color: silver;
+  background-color: rgba(125, 165, 175, 0.952);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: small;
   padding: 4px;
+  color: aliceblue;
+  font-weight: bolder;
 }
 
 .bottomBar {
