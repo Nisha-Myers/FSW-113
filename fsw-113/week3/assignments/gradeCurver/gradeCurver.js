@@ -32,37 +32,76 @@ function convertArray(obj) {
     return ary
 }
 
+
+
 // Condense the number of lines within the curveGrade() function as much as possible by converting 
 // the functions to arrow functions. You can also condense the number of lines by combining some 
 // separate lines of code into single lines. It currently has 18 lines of code. Without counting  
 // empty lines, can you get the number of lines down to 8?
 
 function curveGrades() {
-    **sum = function (accumulator, currentValue) {
-        return accumulator + currentValue
-    }
+    const aryGrades = convertArray(document.querySelector('#scores'));
+    console.log(aryGrades, typeof aryGrades[0]);
 
-    **sumGrades = function(array) {
-        return array.reduce(sum)
-    }
+    const sum = (accumulator, currentValue) => accumulator + currentValue;
 
-    **aryGrades = convertArray(document.querySelector('#scores'))
+    const sumGrades = array => array.reduce(sum);
 
-    **minGrade = aryGrades.reduce(function(a, b) {
-        return Math.min(a, b)
-    })
+    const mean = sumGrades(aryGrades) / aryGrades.length
+    console.log(mean)
+
+    const minGrade = aryGrades.reduce((a, b) => Math.min(a, b));
     
-    **maxGrade = aryGrades.reduce(function(a, b) {
-        return Math.max(a, b)
-    })
+    const maxGrade = aryGrades.reduce((a, b) => Math.max(a, b));
+
+    console.log(minGrade);
+    console.log(maxGrade);
     
-    **mean = sumGrades(aryGrades) / aryGrades.length
+    const range = maxGrade - minGrade
+    console.log(range);
 
-    **range = maxGrade - minGrade
+    const gradeSlice = range / 5
+    console.log(gradeSlice);
 
-    gradeSlice = range / 5
+    aryGrades.forEach(applyBell);
+    console.log(aryGrades);
 
-    aryGrades.forEach(applyBell)
+
 
     // write the value of aryGrades to the grades div in the HTML document
+
+    document.getElementById('grades').append("\n", aryGrades);
+
+    function applyBell(grade, index, ary) {
+        switch (true) {
+            case grade >= (mean + (gradeSlice * 2)): 
+                ary[index] = 'A'
+                break
+            case grade >= (mean + gradeSlice): 
+                ary[index] = 'B'
+                break
+            case grade >= (mean):
+                ary[index] = 'C'
+                break
+            case grade >= (mean - gradeSlice): 
+                ary[index] = 'D'
+                break
+            default:
+                ary[index] = 'F'
+                break
+        }
+    }
 }
+
+var wrapper = document.querySelector(".gradeWrapper")
+console.log(wrapper)
+
+function gradesReset() {
+    document.querySelector("#grades").innerText = 'Curved Grades Show here';
+}
+
+document.getElementById('submit').addEventListener('click', curveGrades);
+console.log(curveGrades);
+
+document.getElementById('reset').addEventListener('click', gradesReset);
+console.log(gradesReset);
