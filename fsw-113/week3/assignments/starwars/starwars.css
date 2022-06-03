@@ -1,7 +1,14 @@
 .queryWrapper {
+  font-family: 'Special Elite', cursive;
+  font-size: 30px;
+  color: rgb(65, 48, 51);
+  background-image: url(galaxy.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   border: black 2px solid;
   border-radius: 8px;
-  padding: 5px;
+  padding: 22px;
   width: 400px;
   /* 
   use the CSS grid to display all five <div> elements contained within
@@ -11,8 +18,14 @@
 }
 
 .dataWrapper {
+  font-family: 'Special Elite', cursive;
+  color: rgb(238, 204, 247);
+  font-size: 43px;
   border-radius: 8px;
-  background-color: silver;
+  background-image: url(stars.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   padding: 5px;
   width: 400px;
   /* 
@@ -37,4 +50,62 @@
   width: 400px;
   margin: 0 auto;
   text-align: center;
+}
+
+
+
+
+html {
+  background-image: url(night.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-weight: bolder;
+}
+
+a {
+  color: rgb(155, 247, 216);
+}
+
+#title {
+  font-family: 'Special Elite', cursive;
+  color: rgb(253, 151, 168);
+  font-size: 90px;
+  font-weight: bolder;
+}
+
+#queryType {
+  font-family: 'Special Elite', cursive;
+  color: rgb(224, 134, 149);
+  font-size: 18px;
+  margin: 2%;
+  padding: 1%;
+  margin-bottom: 6%;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+#itemID {
+  font-family: 'Special Elite', cursive;
+  color: rgb(224, 134, 149);
+  font-size: 18px;
+  margin: 1%;
+  padding: 1%;
+  margin-bottom: 6%;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+#fetchButton {
+  background-image: url(night.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Special Elite', cursive;
+  color: rgb(255, 221, 227);
+  font-size: 16.5px;
+  margin: 2%;
+  padding: 2%;
+  border-radius: 50%;
+  font-weight: bolder;
 }
