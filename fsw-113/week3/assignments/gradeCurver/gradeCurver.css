@@ -10,40 +10,48 @@
 
 .gradeHeading {
   color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'My Soul', cursive;
   font-size: large;
-  font-weight: 900;
-  font-size: 25px;
+  font-weight: bolder;
+  font-size: 55px;
   margin-top: 25px;
 }
 
 .gradeInput {
   border: 0px;
-  padding: 5px;
-  border-radius: 3px;
+  padding: 4px;
+  border-radius: 5px;
   background-color: skyblue;
   margin-top: 25px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 .gradeDiv {
   margin: 0 auto;
   border: 0px;
-  padding: 5px;
-  border-radius: 3px;
+  padding: 7px;
+  border-radius: 5px;
   background-color: skyblue;
   margin-top: 25px;
   width: 90%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 #submit {
+  font-family: 'Gloria Hallelujah', cursive;
+  border: 3px solid rgb(190, 233, 250);
   border-radius: 50%;
+  color: blue;
+  background: rgb(190, 233, 250);
   padding: 2%;
   font-weight: bolder;
 }
 
 #reset {
+  font-family: 'Gloria Hallelujah', cursive;
+  border: 3px solid blue;
+  color: rgb(190, 233, 250);
+  background: blue;
   border-radius: 50%;
   padding: 2%;
   font-weight: bolder;

@@ -104,4 +104,3 @@ document.getElementById('submit').addEventListener('click', curveGrades);
 console.log(curveGrades);
 
 document.getElementById('reset').addEventListener('click', gradesReset);
-console.log(gradesReset);
