@@ -1,19 +1,24 @@
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Special Elite', cursive;
 }
 
 .intro {
   width: 300px;
   margin: 0 auto;
+  font-family: 'Special Elite', cursive;
 }
+
 .wrapper {
   border: black 2px solid;
   border-radius: 8px;
-  padding: 5px;
+  padding: 12px;
   width: 300px;
   display: grid;
   grid-template-columns: 150px 150px;
   margin: 0 auto;
+  background: -webkit-linear-gradient(rgba(255, 255, 0, 0.651), rgba(0, 0, 255, 0.541));
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .spanner {
@@ -26,13 +31,68 @@ body {
 
 .text {
   border-radius: 4px;
-  background-color: silver;
   width: 300px;
   margin: 0 auto;
   text-align: center;
   margin-top: 25px;
+  background: -webkit-linear-gradient(rgba(0, 0, 255, 0.541), white);
+  font-family: 'Special Elite', cursive;
+  font-size: 25px;
+  font-weight: 500;
 }
+
 input {
   width: 90%;
   margin-bottom: 2px;
 }
+
+#submit {
+  border-radius: 45%;
+  padding: 3%;
+  font-weight: bolder;
+  background-color: rgb(245, 245, 126);
+  font-family: 'Special Elite', cursive;
+  font-size: 16px;
+}
+
+p {
+  text-align: center;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+b {
+  font-size: 55px;
+  font-family: 'Special Elite', cursive;
+}
+
+ul {
+  border-radius: 5px;
+  padding: 3%;
+  background: -webkit-linear-gradient(white, rgba(255, 255, 0, 0.651));
+  font-size: 18px;
+}
+
+#s-0 {
+  font-size: 28px;
+  font-family: 'Homemade Apple', cursive;
+}
+
+#s-1 {
+  font-size: 43px;
+  font-family: 'Dancing Script', cursive;
+}
+
+#s-2 {
+  font-size: 46px;
+  font-family: 'Babylonica', cursive;
+}
+
+#s-3 {
+  font-size: 35px;
+  font-family: 'Parisienne', cursive;
+}
+
+#scavenger-0, #scavenger-1, #scavenger-2, #scavenger-3 {
+  font-size: 24px;
+  font-family: 'Caveat', cursive;}
