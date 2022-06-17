@@ -21,8 +21,10 @@
 
 .title {
   text-align: center;
-  font-size: large;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  font-family: 'Great Vibes', cursive;
+  font-weight: bold;
+  padding: 2%;
 }
 
 .cert-title {
@@ -59,7 +61,7 @@ input {
 button {
   font-family: 'Satisfy', cursive;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 15px;
   margin: 1%;
   padding: 3px;
   border-radius: 10px;
