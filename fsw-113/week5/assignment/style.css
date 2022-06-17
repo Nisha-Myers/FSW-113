@@ -43,21 +43,29 @@
 
 .cert-data {
   text-align: center;
-  font-size: 24px;
+  font-size: 25px;
   font-family: 'Whisper', cursive;
   padding: 1px;
 }
 
 input {
+  font-family: 'Whisper', cursive;
+  font-size: 23px;
   width: 270px;
   background-color: white;
   border-color: silver;
 }
 
 button {
-  width: 137px;
-  background-color: gray;
-  color: white;
+  font-family: 'Satisfy', cursive;
+  font-weight: bold;
+  font-size: 17px;
+  margin: 1%;
+  padding: 3px;
+  border-radius: 10px;
+  width: 130px;
+  background-color: rgb(192, 165, 147);
+  color: rgb(252, 246, 236);
 }
 
 .certificate-background {
