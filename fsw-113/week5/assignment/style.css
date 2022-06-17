@@ -6,50 +6,60 @@
   border-radius: 4px;
   width: 300px;
   background-image: linear-gradient(
-    rgb(228, 228, 228),
-    white,
-    white,
-    white,
-    rgb(228, 228, 228)
+    rgb(247, 229, 196),
+    rgb(177, 150, 132),
+    rgb(248, 223, 202),
+    rgb(250, 243, 228),
+    rgb(248, 223, 209)
   );
 }
+
 .cell {
   padding: 10px;
   width: 100%;
 }
+
 .title {
   text-align: center;
   font-size: large;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .cert-title {
   text-align: center;
-  font-size: 36px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 6px;
+  font-size: 55px;
+  font-family: 'Great Vibes', cursive;
+  font-weight: bolder;
+  padding: 4px;
 }
+
 .cert-sub-title {
   text-align: center;
-  font-size: 24px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 3px;
+  font-size: 28px;
+  font-family: 'Great Vibes', cursive;
+  font-weight: bold;
+  padding: 1px;
 }
+
 .cert-data {
   text-align: center;
   font-size: 24px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  padding: 3px;
+  font-family: 'Whisper', cursive;
+  padding: 1px;
 }
+
 input {
   width: 270px;
   background-color: white;
   border-color: silver;
 }
+
 button {
   width: 137px;
   background-color: gray;
   color: white;
 }
+
 .certificate-background {
   background-image: url(./images/cert.jpg);
   background-size: 800x 400px;
