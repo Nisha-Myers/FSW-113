@@ -1,23 +1,37 @@
 /* Modify these styles so that the elements on the HTML page display as they do in the example */
 
+html {}
+
 .weatherWrapper {
+  font-size: larger;
   margin: 0 auto;
   width: 300px;
   margin-top: 30px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#city {
+  font-family: 'Special Elite', cursive;
 }
 
 .header {
-  font-size: large;
+  font-size: larger;
   text-align: center;
-  font-weight: 700;
-  padding: 8px;
+  font-weight: 800;
+  padding: 15px;
+  font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 .data {
   font-size: medium;
   padding: 8px;
   text-align: right;
+}
+
+#goBttn {
+  border-radius: 10px;
+  padding: 1.5%;
+  font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 .label {
@@ -29,4 +43,5 @@
   font-size: small;
   text-align: center;
   padding: 8px;
+  font-family: 'Special Elite', cursive;
 }
