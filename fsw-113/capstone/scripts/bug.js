@@ -7,6 +7,7 @@ var listWrapper = document.querySelector("#listWrapper");
 class Bug {
     static bugCount = 1;
     constructor(reportedBy, system, subSystem, bugDesc) {
+
         // This constructor should be set up to accept the four user-input values from index.html: 
         // reportedBy, system, subSystem, and bugDesc
         this.reportedBy = reportedBy;
@@ -17,6 +18,7 @@ class Bug {
     }
 
     addBug() {
+
         // Create a div element that displays the bug information input by the user within the "listWrapper" DOM element. 
         // It should also contain buttons whose onClick events will call the deleteBug() and resolveBug() methods (see below). 
         let div = document.createElement('div');
@@ -59,12 +61,14 @@ class Bug {
     }
 
     deleteBug() {
+
         // Create code that will remove the appropriate bug from the DOM. 
         // You may need to Google how to remove an element from the DOM.
         document.querySelector(`#div_${id}`).remove()
     }
 
     resolveBug() {
+
         // Create code that changes the appropriate bug report to a darker color
         console.log("color change");
         document.querySelector(`#div_${id}`).getElementsByClassName.backgroundColor = "rgb(38, 38, 190)";
@@ -72,6 +76,7 @@ class Bug {
 }
 
 function reportBug(e) {
+    
     // Create code that instantiates the Bug class with the data input by the 
     // user in the index.html form. Then call the method to add the new bug report.
     const select = selectItem.options[selectItem.selectedIndex].text;
